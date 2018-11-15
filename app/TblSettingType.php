@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TblBrand extends Model
+class TblSettingType extends Model
 {
     //
     protected $fillable=[
-        'brand_name',
-        'logo',
+        'type_name',
+        'ind',
         'inactive'
     ];
 }
