@@ -14,7 +14,7 @@ class CreateTblBrandsTable extends Migration
     public function up()
     {
         Schema::create('tbl_brands', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('brand_id');
             $table->string('brand_name',30);
             $table->string('logo');
             $table->string('inactive');

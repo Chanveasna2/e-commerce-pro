@@ -14,7 +14,7 @@ class CreateTblPurchasingsTable extends Migration
     public function up()
     {
         Schema::create('tbl_purchasings', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('purchasing_id');
             $table->integer('pro_id');
             $table->integer('qty');
             $table->integer('user_id');

@@ -14,7 +14,7 @@ class CreateTblProductsTable extends Migration
     public function up()
     {
         Schema::create('tbl_products', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('pro_id');
             $table->string('pro_code',20);
             $table->string('pro_name',30);
             $table->integer('mainCat_id');

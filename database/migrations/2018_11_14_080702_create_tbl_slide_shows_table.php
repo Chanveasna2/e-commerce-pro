@@ -14,7 +14,7 @@ class CreateTblSlideShowsTable extends Migration
     public function up()
     {
         Schema::create('tbl_slide_shows', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('slide_id');
             $table->string('slide_name',30);
             $table->string('file');
             $table->string('ind',2);

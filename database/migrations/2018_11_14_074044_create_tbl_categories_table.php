@@ -14,7 +14,7 @@ class CreateTblCategoriesTable extends Migration
     public function up()
     {
         Schema::create('tbl_categories', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('category_id');
             $table->string('category_name',30);
             $table->integer('mainCat_id');
             $table->string('ind',2);

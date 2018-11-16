@@ -14,7 +14,7 @@ class CreateTblOrderingsTable extends Migration
     public function up()
     {
         Schema::create('tbl_orderings', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('ordering_id');
             $table->integer('pro_id');
             $table->integer('qty');
             $table->float('total');

@@ -14,7 +14,7 @@ class CreateTblPromotionsTable extends Migration
     public function up()
     {
         Schema::create('tbl_promotions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('promo_id');
             $table->string('promo_name',30);
             $table->string('promo_image');
             $table->time('promo_expired');

@@ -14,7 +14,7 @@ class CreateTblSettingTypesTable extends Migration
     public function up()
     {
         Schema::create('tbl_setting_types', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('type_id');
             $table->string('type_name',30);
             $table->string('ind',2);
             $table->string('inactive');
